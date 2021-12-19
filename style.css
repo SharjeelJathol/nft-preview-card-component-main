@@ -1,0 +1,131 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit;
+    font-size: 18px;
+}
+p{
+    color: white;
+}
+hr
+{
+    border-style: solid  none none;
+    border-color: hsl(215, 32%, 27%);
+    border-width: 1px;
+    width: 90%;
+    height: 0px;
+}
+.main{
+    width: 340px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    margin: auto;
+}
+.image{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+    position: relative;
+}
+
+.image-img{
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 15px;
+    display: block;
+}
+.image-hover{
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%, 0.6);
+    top: 0;
+
+    /*center the contents*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    /*hide initially*/
+    opacity: 0;
+
+    /**/
+    transition: opacity 0.25s;
+}
+.image-hover:hover{
+    opacity: 1;
+}
+.image-hover>*{
+    transform: translateY(10px);
+    transition: transform 0.25s;
+}
+.image-hover:hover>*{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.equi{
+    margin-left: 5%;
+    font-size: 18px;
+
+}
+.equi:hover{
+    color: hsl(178, 100%, 50%);
+}
+.des{
+    margin-left: 5%;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+.eth{
+    display: inline;
+    color: hsl(178, 100%, 50%);
+    margin-left: 2%;
+    vertical-align: top;
+}
+.eth-ic{
+    margin-left: 5%;
+    float: left;
+    height: 18px;
+    width: 12px;
+    vertical-align: middle;
+}
+.time-ic{
+    vertical-align: middle;
+}
+.time{
+    display: inline;
+    color: hsl(215, 51%, 70%);
+    vertical-align: middle;
+}
+.second-div{
+    margin-right: 5%;
+    margin-bottom: 18px;
+    float: right;
+}
+
+.third-div{
+    margin: 13px auto auto 5%;
+}
+.self{
+    height: 30px;
+    width:30px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 1px;
+    vertical-align: middle;
+}
+.creation{
+    margin-left: 10px;
+    display: inline;
+    color: hsl(215, 51%, 70%);
+    vertical-align: middle;
+}
+.name{
+    display: inline;
+    color: hsl(215, 51%, 70%);
+    vertical-align: middle;
+}
+.name:hover{
+    color: hsl(178, 100%, 50%);
+}
